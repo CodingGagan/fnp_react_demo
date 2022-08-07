@@ -1,0 +1,17 @@
+.Navbar  {
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+.Navbar a{ 
+    color: white !important;
+}
+
+#Brand {
+    height: 58px;
+}
+
+#Brand img {
+    height: 100%;
+    width: 100%;
+}

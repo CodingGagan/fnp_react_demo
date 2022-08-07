@@ -1,0 +1,39 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Home Card */
+.home-card-layout {
+    margin: 20px 0;
+}
+
+.home-card-layout .card {
+    display: block;
+    margin: auto;
+}
+
+.home-layout-hightlight-menu {
+    border: 2px solid #cacaca;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+.borderDesign {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}

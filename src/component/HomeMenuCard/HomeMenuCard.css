@@ -1,0 +1,22 @@
+.col-xl-2.col{
+    padding: 10px;
+    border: 1px solid #cacaca;
+    margin: 9px auto;
+    text-align: center;
+}
+
+.menu-upper-icon {
+     height: 57px;
+     width: 57px;
+     margin: auto;
+}
+
+.menu-upper-icon img {
+    display: block;
+    margin: auto;
+     width: 100%;
+}
+
+.menu-bottom-title {
+    text-align: center;
+}
