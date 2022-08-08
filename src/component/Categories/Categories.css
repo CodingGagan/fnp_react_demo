@@ -1,0 +1,25 @@
+.row .col-xl-3.col .row {
+    border: 1px solid #000;
+    /* padding: 5px; */
+    margin: 7px;
+    text-align: center;
+}
+.row .col-xl-3 .row .col-3 
+{
+    border-right: 1px solid #000;
+    background-color: rgb(215, 217, 220);
+}
+
+.left-cards {
+    font-size: 50px;
+}
+
+.category-div .col-9 {
+    background-color: #fff;
+}
+
+.right-cards {
+    background: white;
+    line-height: 85px;
+    font-size: 1.2rem;
+}

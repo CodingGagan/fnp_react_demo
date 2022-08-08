@@ -2,10 +2,17 @@ import React from 'react'
 import CardComponent from '../component/Card/CardComponent';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Container } from 'react-bootstrap';
 import HomeMenuCard from '../component/HomeMenuCard/HomeMenuCard';
 import { FcBusinesswoman } from "react-icons/fc";
 import Jumbotron from '../component/Jumbotron/Jumbotron';
 import Divider from '../component/Divider/Divider';
+import CategoriesBox from '../component/Categories/Categories';
+import CustomerCard from '../component/Customer_card/CustomerCard';
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const arrCount = [1, 2, 3, 4, 5, 6];
 const menuTitle = [
@@ -15,7 +22,34 @@ const menuTitle = [
     { 'icon': "", "title": "Annivesary Gift" },
     { 'icon': "", "title": "Annivesary Gift" }
 ];
+
+const images = [{
+    id: 1,
+    src: "https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg",
+    alt: "Image 1"
+},
+{
+    id: 2,
+    src: "https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg",
+    alt: "Image 2 "
+},
+{
+    id: 3,
+    src: "https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg",
+    alt: "Image 3"
+}
+];
 function home() {
+    const settings = {
+        infinite: true,
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        lazyLoad: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+    };
     return (
         <>
             <Row>
@@ -69,7 +103,38 @@ function home() {
                 </Row>
             </div>
             <Divider content="Best Categories" />
+            <div className="category-div">
+                <Row>
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                    <CategoriesBox />
+                </Row>
+            </div>
             <Divider content="Customer Stories and Reviews" />
+            <Container fluid>
+                {/* <Carousel>
+                        <CustomerCard />
+                        <CustomerCard />
+                    </Carousel> */}
+                <Slider {...settings}>
+
+                        <CustomerCard />
+                        <CustomerCard />
+                        <CustomerCard />
+                        <CustomerCard />
+                        <CustomerCard />
+                    
+                </Slider>
+            </Container>
             <Divider content="Recently Viewed Products" />
         </>
     )

@@ -1,0 +1,19 @@
+#customer_card {
+    padding:30px;
+}
+
+#customer_card .row {
+    padding:10px 20px;
+    border-radius: 20px;
+border: 1px solid #000;
+}
+.left_image {
+    height: 100px;
+    width: 100px;
+    clip-path: circle(50%);
+}
+
+.left_image img {
+    height: 100%;
+    width: 100%;
+}
