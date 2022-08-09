@@ -43,3 +43,22 @@ html {
     padding: 40px 0;
     background-color: #cacaca;
 }
+
+.slideReviews {
+    height: 400px;
+    width: 100px;
+    padding: 20px;
+}
+
+.slideReviews img {
+    height: 100%;
+    width: 100%;
+}
+
+.slick-prev:before {
+    color: black !important;
+}
+
+.slick-next:before {
+    color: black !important;
+}

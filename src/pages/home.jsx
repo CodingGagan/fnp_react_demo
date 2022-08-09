@@ -23,32 +23,17 @@ const menuTitle = [
     { 'icon': "", "title": "Annivesary Gift" }
 ];
 
-const images = [{
-    id: 1,
-    src: "https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg",
-    alt: "Image 1"
-},
-{
-    id: 2,
-    src: "https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg",
-    alt: "Image 2 "
-},
-{
-    id: 3,
-    src: "https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg",
-    alt: "Image 3"
-}
-];
+
 function home() {
     const settings = {
         infinite: true,
         dots: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,
         autoplay: true,
         autoplaySpeed: 2000,
-
+arrows: true
     };
     return (
         <>
@@ -58,47 +43,47 @@ function home() {
             <Jumbotron back_img={"https://images.pexels.com/photos/6102145/pexels-photo-6102145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
             <Row>
                 {
-                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={4}><CardComponent source={"https://www.fnp.com/images/pr/l/v20191227124147/lilies-roses-elegant-vase_1.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent source={"https://www.fnp.com/images/pr/l/v20191227124147/lilies-roses-elegant-vase_1.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                 }
             </Row>
             <Divider content="Best Selling Gift" />
             <Row>
                 {
-                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={4}><CardComponent source={"https://cdn.igp.com/f_auto,q_auto,t_pnopt8prodlp/products/p-money-plant-in-square-glass-vase-139335-m.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent source={"https://cdn.igp.com/f_auto,q_auto,t_pnopt8prodlp/products/p-money-plant-in-square-glass-vase-139335-m.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
                 }
             </Row>
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
                     }
                 </Row>
             </div>
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Cake Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Cake Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
                     }
                 </Row>
             </div>
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Flowers Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Flowers Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
                     }
                 </Row>
             </div>
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Plants Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Plants Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
                     }
                 </Row>
             </div>
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs xm={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Combo With Flower"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Combo With Flower"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
                     }
                 </Row>
             </div>
@@ -120,22 +105,33 @@ function home() {
                 </Row>
             </div>
             <Divider content="Customer Stories and Reviews" />
-            <Container fluid>
-                {/* <Carousel>
-                        <CustomerCard />
-                        <CustomerCard />
-                    </Carousel> */}
-                <Slider {...settings}>
 
-                        <CustomerCard />
-                        <CustomerCard />
-                        <CustomerCard />
-                        <CustomerCard />
-                        <CustomerCard />
-                    
-                </Slider>
-            </Container>
             <Divider content="Recently Viewed Products" />
+
+            <Container>
+                <Slider {...settings}>
+                    <div className='slideReviews'>
+                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                    </div>
+                    <div className='slideReviews'>
+                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                    </div>
+                    <div className='slideReviews'>
+                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                    </div>
+                    <div className='slideReviews'>
+                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                    </div>
+                    <div className='slideReviews'>
+                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                    </div>
+                    <div className='slideReviews'>
+                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                    </div>
+                </Slider>
+
+            </Container>
+
         </>
     )
 }

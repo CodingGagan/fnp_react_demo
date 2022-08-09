@@ -1,19 +1,33 @@
-#customer_card {
-    padding:30px;
-}
+.row-custom {
+    display: flex;
+    flex-direction: row;
 
-#customer_card .row {
-    padding:10px 20px;
-    border-radius: 20px;
-border: 1px solid #000;
-}
-.left_image {
     height: 100px;
-    width: 100px;
-    clip-path: circle(50%);
+    width: 500px;
+    background-color: green;
 }
 
-.left_image img {
+.row-custom-1 {
+ width: 100%;
+    border: 1px solid black;
+}
+
+.row-custom-1 .left-col {
+    background-color: red;
+    width: 180px;
+    height: 100%;
+    border-radius: 180px;
+    overflow: hidden;
+}
+
+.row-custom-1 .left-col img {
     height: 100%;
     width: 100%;
+}
+
+
+.row-custom-1 .right-col {
+    height: 100%;
+    width: 320px;
+    background-color: aquamarine;
 }

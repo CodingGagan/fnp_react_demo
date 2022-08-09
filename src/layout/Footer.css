@@ -1,0 +1,42 @@
+footer {
+    padding: 40px 0;
+    min-height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer-first label {
+    word-spacing: 2px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+h1 {
+    color: white !important;
+}
+
+#firstCol {
+    border-right: 2px solid white;
+}
+
+.social-container {
+    /* margin: 4px; */
+}
+
+.footer-second {
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.footer-last {
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.creditcard {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
