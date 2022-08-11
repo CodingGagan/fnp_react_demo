@@ -4,15 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from 'react-bootstrap';
 import HomeMenuCard from '../component/HomeMenuCard/HomeMenuCard';
-import { FcBusinesswoman } from "react-icons/fc";
 import Jumbotron from '../component/Jumbotron/Jumbotron';
 import Divider from '../component/Divider/Divider';
 import CategoriesBox from '../component/Categories/Categories';
-import CustomerCard from '../component/Customer_card/CustomerCard';
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const arrCount = [1, 2, 3, 4, 5, 6];
 const menuTitle = [
@@ -33,7 +31,7 @@ function home() {
         lazyLoad: true,
         autoplay: true,
         autoplaySpeed: 2000,
-arrows: true
+        arrows: true
     };
     return (
         <>
@@ -111,23 +109,53 @@ arrows: true
             <Container>
                 <Slider {...settings}>
                     <div className='slideReviews'>
-                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
                     </div>
+                   
                     <div className='slideReviews'>
-                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
                     </div>
+                   
                     <div className='slideReviews'>
-                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
                     </div>
+                   
                     <div className='slideReviews'>
-                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
                     </div>
+                   
                     <div className='slideReviews'>
-                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
                     </div>
+                   
                     <div className='slideReviews'>
-                        <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
                     </div>
+                   
+                    <div className='slideReviews'>
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
+                    </div>
+                   
+                    <div className='slideReviews'>
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
+                    </div>
+                   
                 </Slider>
 
             </Container>

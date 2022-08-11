@@ -1,0 +1,126 @@
+.BorderInception {
+    /* position: absolute; */
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    z-index: 1111;
+    border: 1px solid black;
+}
+
+#menuCard {
+    height: 220px !important;
+}
+
+.menu {
+    transition: all 5s linear;
+    position: sticky;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    /* z-index: -1; */
+    transition: 0.3s;
+}
+
+.react-tabs__tab.react-tabs__tab--selected {
+    max-height: 40px;
+}
+
+.react-tabs__tab--selected {
+    background: #fff;
+    border-color: #aaa;
+    color: black;
+    border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.react-tabs__tab {
+    text-align: center;
+    padding: 20px 18px !important;
+    border: unset !important;
+}
+
+.react-tabs__tab {
+    height: auto;
+    width: 165px;
+}
+
+.react-tabs__tab svg {
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+
+
+/*  */
+
+
+  
+  @keyframes outAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+#burger-toggle {
+    position: absolute;
+    appearance: none;
+    opacity: 1;
+}
+
+input#burger-toggle:checked~.menu {
+    
+    display: block;
+    z-index: 11111;
+}
+
+.burger-menu .line:nth-child(1) {
+    top: 30%;
+}
+
+.burger-menu .line:nth-child(2) {
+    top: 50%;
+}
+
+.burger-menu .line:nth-child(3) {
+    top: 70%;
+}
+
+
+.burger-menu {
+   
+    z-index: 111111;
+    display: block;
+    width: 45px;
+    height: 45px !important;
+    height: var(--burger-menu-radius);
+    outline: none;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    position: absolute;
+    /* left: 25%; */
+    width: 45px;
+    height: 3px;
+    background: rgba(43, 61, 79, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+/* *********************************** */

@@ -42,7 +42,7 @@ function Footer() {
                     </Row>
                 </div>
                 <div className="footer-second">
-                    <h7>About us | SMF Team | Careers | Contact Us | Testimonials | Terms & Conditions | Disclaimer | Terms Of Use | Privacy Policy | FAQ | Retails Store | Franchise | Blog | Affiliate Program | Flower | Astrology | News | Room | Download App</h7>
+                    <h6>About us | SMF Team | Careers | Contact Us | Testimonials | Terms & Conditions | Disclaimer | Terms Of Use | Privacy Policy | FAQ | Retails Store | Franchise | Blog | Affiliate Program | Flower | Astrology | News | Room | Download App</h6>
                 </div>
                 <div className="footer-last">
                     Copyright @ 2020 www.sendmyfeelings.com. All right reserved.

@@ -3,15 +3,34 @@
     color: white !important;
 }
 
+.SubNavbar  {
+    background-color: #939191 !important;
+    color: white !important;
+    position: sticky !important;
+    top: 0px;
+    z-index: 1111;
+}
+
 .Navbar a{ 
     color: white !important;
+}
+
+#subNavbarScroll {
+    align-items: unset !important;
+    justify-content: flex-end !important;
 }
 
 #Brand {
     height: 58px;
 }
 
+#SubBrand {
+    height: 35px;
+}
+
 #Brand img {
     height: 100%;
     width: 100%;
 }
+
+/* Collapsed Menu */
