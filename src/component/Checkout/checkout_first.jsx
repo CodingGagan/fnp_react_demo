@@ -26,17 +26,17 @@ export default function CheckoutFirst() {
                                 <img className="img-thumbnail-custom rounded" src="https://img.freepik.com/free-photo/top-view-beautiful-roses-bouquet-with-pink-ribbon_23-2148822309.jpg?w=360&t=st=1659981086~exp=1659981686~hmac=58a30a6d203b3378ffda9121b0773b2f882101eb49d1c477ec49bc1129fc1c14" alt="photo" />
                             </div>
                             <div className='align-self-center m-2'>
-                                <label htmlFor="">Frosty Chocolate Cake</label>
-                                <label htmlFor="">Rs 595 * 1Round 1/2 KG</label>
-                                <label htmlFor="">Frosty Chocolate Cake</label>
-                                <label htmlFor="">Eggless</label>
-                                <label htmlFor="">Chocolate Flavour</label>
+                                <h6 htmlFor="">Frosty Chocolate Cake</h6>
+                                <h6 htmlFor="">Rs 595 * 1Round 1/2 KG</h6>
+                                <h6 htmlFor="">Frosty Chocolate Cake</h6>
+                                <h6 htmlFor="">Eggless</h6>
+                                <h6 htmlFor="">Chocolate Flavour</h6>
                             </div>
                             <div className='align-self-center'>
-                                <label htmlFor="">Delivery ON</label>
-                                <label htmlFor=""><strong>Sat, 7 Aug, 2022</strong></label>
-                                <label htmlFor="">Standard Delivery</label>
-                                <label htmlFor="">  08:00 - 15:00 hrs</label>
+                                <h6 htmlFor="">Delivery ON</h6>
+                                <h6 htmlFor=""><strong>Sat, 7 Aug, 2022</strong></h6>
+                                <h6 htmlFor="">Standard Delivery</h6>
+                                <h6 htmlFor="">  08:00 - 15:00 hrs</h6>
                             </div>
                             <div className='align-self-center btn bg-dark text-white'>change</div>
                         </div>
