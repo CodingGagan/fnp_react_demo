@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './CardComponent.css';
 import { Link } from 'react-router-dom';
-export default function CardComponent({ source, showContent, value, cardContent, custContentImg, custContent, checker }) {
+export default function CardComponent({ addCart, source, showContent, value, cardContent, custContentImg, custContent, checker }) {
     return (
         <Card >
             <Link to="/product_details">
@@ -28,6 +28,7 @@ export default function CardComponent({ source, showContent, value, cardContent,
                         </>
                 }
             </Link>
+            <button className='btn btn-danger' onClick={addCart}>+</button>
         </Card>
     )
 }

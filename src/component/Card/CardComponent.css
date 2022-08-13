@@ -32,3 +32,14 @@ background-color: rgba(0,0,0,1)   ;
     padding: 60px 10px;
     border: 1px solid white;
 }
+
+
+.btn.btn-danger {
+    position: absolute;
+    top: 11px;
+    right: 3%;
+    padding: 0px 7px;
+    border-radius: 9px;
+    color: wheat;
+    font-weight: bolder;
+}

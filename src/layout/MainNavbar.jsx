@@ -93,6 +93,9 @@ function MainNavbar({ cartOpen }) {
               navbarScroll
             >
               <Nav.Link>
+                <Link to="/cart">
+                  Open Cart
+                </Link>
                 <Link to="/categories">
                   Categories
                 </Link>

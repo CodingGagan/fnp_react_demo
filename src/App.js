@@ -14,6 +14,10 @@ import Sub_Footer from './layout/Sub_Footer';
 import { useState } from 'react';
 import Backdrop from './layout/Backdrop/Backdrop';
 import Category from './pages/category';
+import ProductListing from './pages/product_listing';
+import Cart from './component/Cart/Cart';
+import SweetAlert from 'react-bootstrap-sweetalert';
+
 function App() {
   const [toggle, setToggle] = useState(false);
 
@@ -31,15 +35,31 @@ function App() {
   if (toggle) {
     backdrop = <Backdrop closeCart={backdropClickHandler} />;
   }
+  const [cartCount, setCartCount] = useState([1]);
+
+  function addCart() {
+    alert('Added to cart')
+    setCartCount(current => [...current, 1]);
+    console.log(cartCount);
+  }
+
+  // function removeCart(e) {
+  //   setCartCount((see) => (people.filter(function (item) {
+  //     return item !== e.target.value
+  //   }))
+  //   )
+  // }
   return (
     <>
       <MainNavbar cartOpen={drawerToggleClickHandler} />
-      <Sidebar show={toggle} />
+      <Sidebar cartCount={cartCount} show={toggle} />
       {backdrop}
       <Container fluid direction="horizontal" gap={3}>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home cartCount={cartCount} addCart={addCart} />}></Route>
           <Route path="/categories" element={<Category />}></Route>
+          <Route path="/cart" element={<Cart cartCount={cartCount} />}></Route>
+          <Route path="/product_listing" element={<ProductListing />}></Route>
           <Route path="/product_details" element={<ProductDeatils />}></Route>
         </Routes>
       </Container>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import CardComponent from '../component/Card/CardComponent';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -22,7 +22,8 @@ const menuTitle = [
 ];
 
 
-function home() {
+
+const Home = ({cartCount, addCart}) => {
     const settings = {
         infinite: true,
         dots: true,
@@ -33,6 +34,7 @@ function home() {
         autoplaySpeed: 2000,
         arrows: true
     };
+   
     return (
         <>
             <Row>
@@ -41,7 +43,7 @@ function home() {
             <Jumbotron back_img={"https://images.pexels.com/photos/6102145/pexels-photo-6102145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
             <Row>
                 {
-                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent source={"https://www.fnp.com/images/pr/l/v20191227124147/lilies-roses-elegant-vase_1.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    arrCount.map((el, key) => <Col key={key}  className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent addCart={addCart} source={"https://www.fnp.com/images/pr/l/v20191227124147/lilies-roses-elegant-vase_1.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                 }
             </Row>
             <Divider content="Best Selling Gift" />
@@ -113,49 +115,49 @@ function home() {
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                     </div>
-                   
+
                 </Slider>
 
             </Container>
@@ -164,4 +166,4 @@ function home() {
     )
 }
 
-export default home
+export default Home

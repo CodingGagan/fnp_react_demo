@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductDetails.css';
-import {Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { BsFillStarFill, BsFillArrowDownCircleFill, BsFillCartPlusFill, BsFillLightningFill } from "react-icons/bs";
 export default function ProductPricing() {
     return (

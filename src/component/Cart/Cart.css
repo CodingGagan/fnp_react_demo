@@ -1,0 +1,48 @@
+.cart-border .row .heading div {
+    text-align: right;
+}
+
+.cart-border {
+    border: 1px solid #000;
+    padding: 10px 20px 0;
+}
+
+.cart-detial {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #cacaca;
+}
+
+.cart-img img {
+    height: 100%;
+}
+
+.cart-detial input {
+    width: 50px;
+    margin: 20px 22px;
+}
+
+.cart-img {
+    height: 120PX;
+    WIDTH: 120PX;
+}
+
+.cart-footer .row div {
+    text-align: center;
+    padding: 10px;
+}
+
+.cart-footer .col-sm-3:nth-child(2) {
+    border-left: 2px solid red;
+}
+.cart-footer .col-sm-3:nth-child(2) span {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.cart-footer .col-sm-6 {
+    background-color: black;
+    color: white;
+}

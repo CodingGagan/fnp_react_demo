@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 
-function Category_filter() {
+function Category_filter({circle}) {
     return (
         <>
             <div className="select-filters">
@@ -41,7 +41,9 @@ function Category_filter() {
                     </Col>
                 </Row>
             </div>
-            <div className="highlight-filters">
+            {
+                circle ??
+                <div className="highlight-filters">
                 <Row>
                     <Col>
                         <div className="circle-div">
@@ -117,6 +119,7 @@ function Category_filter() {
                     </Col>
                 </Row>
             </div>
+            }
         </>
     )
 }
