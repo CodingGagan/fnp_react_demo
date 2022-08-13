@@ -17,7 +17,7 @@ import Backdrop from './layout/Backdrop/Backdrop';
 import Category from './pages/category';
 import ProductListing from './pages/product_listing';
 import Cart from './component/Cart/Cart';
-import SweetAlert from 'react-bootstrap-sweetalert';
+// import SweetAlert from 'react-bootstrap-sweetalert';
 
 function App() {
   const [toggle, setToggle] = useState(false);
