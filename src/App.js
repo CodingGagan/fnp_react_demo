@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
 import ProductDeatils from './pages/product_details';
 import CheckoutDeatils from './pages/checkout_details';
-import Container from 'react-bootstrap/Container';
+import Login from './pages/Login';
 import Sidebar from './layout/Sidebar/Sidebar';
 import {
   Route, Routes
@@ -56,18 +56,25 @@ function App() {
       <Sidebar cartCount={cartCount} show={toggle} />
       {backdrop}
       {/* <Container fluid direction="horizontal" gap={3}> */}
-        <Routes>
-          <Route path="/" element={<Home cartCount={cartCount} addCart={addCart} />}></Route>
-          <Route path="/categories" element={<Category />}></Route>
-          <Route path="/cart" element={<Cart cartCount={cartCount} />}></Route>
-          <Route path="/product_listing" element={<ProductListing />}></Route>
-          <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
-          <Route path="/product_details" element={<ProductDeatils />}></Route>
-          <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home cartCount={cartCount} addCart={addCart} />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/categories" element={<Category />}></Route>
+        <Route path="/cart" element={<Cart cartCount={cartCount} />}></Route>
+        <Route path="/product_listing" element={<ProductListing />}></Route>
+        <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
+        <Route path="/product_details" element={<ProductDeatils />}></Route>
+        <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
+      </Routes>
       {/* </Container> */}
-      <Sub_Footer />
-      <Footer />
+      
+      {
+window.location.pathname != '/login' ??
+        <>
+          <Sub_Footer />
+          <Footer />
+        </>
+      }
     </>
   );
 }
