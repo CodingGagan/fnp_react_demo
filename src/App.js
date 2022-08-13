@@ -55,16 +55,17 @@ function App() {
       <MainNavbar cartOpen={drawerToggleClickHandler} />
       <Sidebar cartCount={cartCount} show={toggle} />
       {backdrop}
-      <Container fluid direction="horizontal" gap={3}>
+      {/* <Container fluid direction="horizontal" gap={3}> */}
         <Routes>
           <Route path="/" element={<Home cartCount={cartCount} addCart={addCart} />}></Route>
           <Route path="/categories" element={<Category />}></Route>
           <Route path="/cart" element={<Cart cartCount={cartCount} />}></Route>
           <Route path="/product_listing" element={<ProductListing />}></Route>
+          <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
           <Route path="/product_details" element={<ProductDeatils />}></Route>
           <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
         </Routes>
-      </Container>
+      {/* </Container> */}
       <Sub_Footer />
       <Footer />
     </>

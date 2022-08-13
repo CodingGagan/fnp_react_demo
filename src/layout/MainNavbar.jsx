@@ -93,9 +93,17 @@ function MainNavbar({ cartOpen }) {
               navbarScroll
             >
               <Nav.Link>
+                <Link to="/checkout_details">
+                  Checkout Details
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
                 <Link to="/cart">
                   Open Cart
                 </Link>
+              </Nav.Link>
+              <Nav.Link>
+
                 <Link to="/categories">
                   Categories
                 </Link>
@@ -124,7 +132,7 @@ function MainNavbar({ cartOpen }) {
       {
 
         showMenu ?
-          <div style={unmountedStyle}  className='BorderInception menu'>
+          <div style={unmountedStyle} className='BorderInception menu'>
             <Tabs selectedIndex={tabIndex} onSelect={tabIndex => setTabIndex(tabIndex)}>
               <TabList>
                 <Tab onMouseEnter={() => setTabIndex(0)}>
