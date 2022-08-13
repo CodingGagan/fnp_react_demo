@@ -62,3 +62,7 @@ html {
 .slick-next:before {
     color: black !important;
 }
+
+#checkout_details {
+    margin: 10px 0;
+}
