@@ -5,6 +5,7 @@ import Footer from './layout/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
 import ProductDeatils from './pages/product_details';
+import CheckoutDeatils from './pages/checkout_details';
 import Container from 'react-bootstrap/Container';
 import Sidebar from './layout/Sidebar/Sidebar';
 import {
@@ -61,6 +62,7 @@ function App() {
           <Route path="/cart" element={<Cart cartCount={cartCount} />}></Route>
           <Route path="/product_listing" element={<ProductListing />}></Route>
           <Route path="/product_details" element={<ProductDeatils />}></Route>
+          <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
         </Routes>
       </Container>
       <Sub_Footer />
