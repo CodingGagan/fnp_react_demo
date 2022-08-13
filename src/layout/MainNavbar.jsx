@@ -66,7 +66,12 @@ function MainNavbar({ cartOpen }) {
               <Nav.Link href="#action2"><FaPlane /></Nav.Link>
 
               <Nav.Link href="#action2" onClick={cartOpen}><FaShoppingCart /></Nav.Link>
-              <Nav.Link href="#action2"><FaUserAlt /></Nav.Link>
+              <Nav.Link>
+                <Link to="/login">
+
+                  <FaUserAlt />
+                </Link>
+              </Nav.Link>
 
 
             </Nav>
