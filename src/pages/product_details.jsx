@@ -3,10 +3,13 @@ import ProductCarousel from '../component/Product/ProductCarousel';
 import ProductPricing from '../component/Product/ProductPricing';
 import ProducAddOn from '../component/Product/ProducAddOn';
 import { Container, Row } from 'react-bootstrap';
+import Sub_Footer from '../layout/Sub_Footer';
+import Footer from '../layout/Footer';
 
 
 function home() {
     return (
+        <>
         <Container>
             <Row>
                 <>
@@ -16,6 +19,9 @@ function home() {
                 </>
             </Row >
         </Container>
+        <Sub_Footer />
+        <Footer />
+        </>
     )
 }
 

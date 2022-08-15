@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import CardComponent from '../component/Card/CardComponent';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,6 +11,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
+import Sub_Footer from '../layout/Sub_Footer';
+import Footer from '../layout/Footer';
 
 const arrCount = [1, 2, 3, 4, 5, 6];
 const menuTitle = [
@@ -23,7 +25,7 @@ const menuTitle = [
 
 
 
-const Home = ({cartCount, addCart}) => {
+const Home = ({ cartCount, addCart }) => {
     const settings = {
         infinite: true,
         dots: true,
@@ -34,7 +36,7 @@ const Home = ({cartCount, addCart}) => {
         autoplaySpeed: 2000,
         arrows: true
     };
-   
+
     return (
         <>
             <Row>
@@ -43,7 +45,7 @@ const Home = ({cartCount, addCart}) => {
             <Jumbotron back_img={"https://images.pexels.com/photos/6102145/pexels-photo-6102145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
             <Row>
                 {
-                    arrCount.map((el, key) => <Col key={key}  className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent addCart={addCart} source={"https://www.fnp.com/images/pr/l/v20191227124147/lilies-roses-elegant-vase_1.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent addCart={addCart} source={"https://www.fnp.com/images/pr/l/v20191227124147/lilies-roses-elegant-vase_1.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                 }
             </Row>
             <Divider content="Best Selling Gift" />
@@ -161,7 +163,8 @@ const Home = ({cartCount, addCart}) => {
                 </Slider>
 
             </Container>
-
+            <Sub_Footer />
+            <Footer />
         </>
     )
 }

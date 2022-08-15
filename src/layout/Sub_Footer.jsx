@@ -2,6 +2,7 @@ import React from 'react'
 import './Sub_Footer.css';
 import { Container } from 'react-bootstrap';
 function Sub_Footer() {
+    
     return (
         <Container fluid>
             <div className="big-wallpaper">

@@ -4,10 +4,13 @@ import CheckoutFirst from '../component/Checkout/checkout_first';
 import { Container, Row } from 'react-bootstrap';
 import CheckoutSecond from '../component/Checkout/checkout_second';
 import CheckoutThird from '../component/Checkout/checkout_third';
+import Footer from '../layout/Footer';
+import Sub_Footer from '../layout/Sub_Footer';
 
 
 function home() {
     return (
+        <>
         <Container>
             <Row>
                 <>
@@ -17,6 +20,9 @@ function home() {
                 </>
             </Row >
         </Container>
+         <Sub_Footer />
+         <Footer />
+         </>
     )
 }
 

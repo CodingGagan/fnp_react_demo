@@ -21,6 +21,7 @@ import Cart from './component/Cart/Cart';
 
 function App() {
   const [toggle, setToggle] = useState(false);
+  var check = false;
 
   const drawerToggleClickHandler = () => {
     console.log("CLicked " + toggle);
@@ -39,10 +40,22 @@ function App() {
   const [cartCount, setCartCount] = useState([1]);
 
   function addCart() {
-    alert('Added to cart')
     setCartCount(current => [...current, 1]);
     console.log(cartCount);
   }
+
+  // function checkpath() {
+  //   if (window.location.pathname == '/login') {
+  //     check = false;
+  //     alert(check);
+
+  //   } else {
+  //     check = true;
+  //     alert(check);
+
+  //   }
+  // }
+  // checkpath();
 
   // function removeCart(e) {
   //   setCartCount((see) => (people.filter(function (item) {
@@ -66,15 +79,6 @@ function App() {
         <Route path="/product_details" element={<ProductDeatils />}></Route>
         <Route path="/checkout_details" element={<CheckoutDeatils />}></Route>
       </Routes>
-      {/* </Container> */}
-      
-      {
-window.location.pathname != '/login' ??
-        <>
-          <Sub_Footer />
-          <Footer />
-        </>
-      }
     </>
   );
 }
