@@ -1,26 +1,37 @@
-.card {
-    height: 400px !important;
+.row {
+    margin-left: unset;
+    margin-right: unset;
 }
+
+.home-card-layout  {
+    margin-bottom: 4.5%;
+}
+
+.card {
+    height: 300px !important;
+}
+
 .card img {
     display: block;
     margin: auto;
-    height:80%;
+    height: 100%;
 }
 
 .cardContent {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
 }
 
 
 .customCenterContent {
-position: absolute;
-height: 100%;
-top: 0;
-width: 100%;
-background-color: rgba(0,0,0,1)   ;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
 }
+
 .customCenterContent h2 {
     position: absolute;
     bottom: 1%;

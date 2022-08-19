@@ -26,6 +26,10 @@
     max-height: 40px;
 }
 
+.SubMenuLinks a {
+color: white;
+}
+
 .react-tabs__tab--selected {
     background: #fff;
     border-color: #aaa;
@@ -65,15 +69,16 @@
 /*  */
 
 
-  
-  @keyframes outAnimation {
+
+@keyframes outAnimation {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
 #burger-toggle {
     position: absolute;
@@ -82,7 +87,7 @@
 }
 
 input#burger-toggle:checked~.menu {
-    
+
     display: block;
     z-index: 11111;
 }
@@ -100,8 +105,21 @@ input#burger-toggle:checked~.menu {
 }
 
 
+#root .MenuInput {
+    width: 40% !important;
+    position: relative;
+}
+
+#root .MenuInput input {
+    border-radius: unset !important;
+}
+
+#root .navbar-nav-scroll a svg {
+    color: white !important;
+}
+
 .burger-menu {
-   
+
     z-index: 111111;
     display: block;
     width: 45px;
@@ -116,7 +134,7 @@ input#burger-toggle:checked~.menu {
     /* left: 25%; */
     width: 45px;
     height: 3px;
-    background: rgba(43, 61, 79, 0.3);
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;

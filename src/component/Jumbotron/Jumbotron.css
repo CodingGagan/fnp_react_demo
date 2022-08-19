@@ -2,8 +2,8 @@
     min-height: 70vh;
     max-width: 100vw;
     box-shadow: 0 0 10px #cacaca;
-position: relative;
-margin: 0 0 2% 0;
+    position: relative;
+    margin: 0 0 2% 0;
 }
 
 .jumbotron img {
@@ -28,15 +28,16 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.search-area .container{
-    background-color: rgba(0,0,0,0.7);
-margin: 10px auto;
-border-radius: 10px;
+.search-area .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+    border-radius: 10px;
 }
-.search-area{
+
+.search-area {
     position: absolute;
     bottom: 0;
     z-index: 1;
@@ -45,6 +46,13 @@ border-radius: 10px;
     color: white;
 }
 
-.submit-btn {
-    text-align: right;
+#submit-btn {
+    /* text-align: right; */
+}
+
+#submit-btn .jumbotronBtn {
+    position: relative;
+    border-radius: unset;
+    width: 100%;
+    padding: 5px 7px;
 }

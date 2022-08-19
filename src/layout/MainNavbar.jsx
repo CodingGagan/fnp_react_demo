@@ -38,11 +38,11 @@ function MainNavbar({ cartOpen }) {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Form className="d-flex mx-auto">
+            <Form id={styles.inputTag} className="d-flex mx-auto MenuInput">
               <Form.Control
                 type="search"
                 placeholder="Search"
-                className="me-2 w-75 d-block"
+                className="me-2 w-100 d-block"
                 aria-label="Search"
               /></Form>
             <Nav
@@ -89,15 +89,16 @@ function MainNavbar({ cartOpen }) {
               <div class="line"></div>
             </label>
           </Navbar.Brand>
+          <h5>Browse Gifts</h5>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id={styles.subNavbarScroll}>
 
             <Nav
-              className="d-flex my-2 my-lg-0"
+              className="d-flex SubMenuLinks my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link>
+              {/* <Nav.Link>
                 <Link to="/checkout_details">
                   Checkout Details
                 </Link>
@@ -112,7 +113,7 @@ function MainNavbar({ cartOpen }) {
                 <Link to="/categories">
                   Categories
                 </Link>
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link href="#action1">
                 SAME DAY DELIVERY
               </Nav.Link>

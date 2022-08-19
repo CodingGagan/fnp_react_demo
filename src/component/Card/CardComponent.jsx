@@ -28,7 +28,7 @@ export default function CardComponent({ addCart, source, showContent, value, car
                         </>
                 }
             </Link>
-            <button className='btn btn-danger' onClick={addCart}>+</button>
+            {/* <button className='btn btn-danger' onClick={addCart}>+</button> */}
         </Card>
     )
 }

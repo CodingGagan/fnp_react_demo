@@ -3,8 +3,9 @@
     color: white !important;
 }
 
+
 .SubNavbar  {
-    background-color: #939191 !important;
+    background-color: #1f1f1f !important;
     color: white !important;
     position: sticky !important;
     top: 0px;
@@ -21,7 +22,8 @@
 }
 
 #Brand {
-    height: 58px;
+    height: 94px !important;
+    width: 175px;
 }
 
 #SubBrand {

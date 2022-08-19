@@ -22,29 +22,29 @@ function Jumbotron({ back_img }) {
                     <Form>
                         <Row>
                             <Col xs xm={2}>
-                                <label htmlFor="">Delivery <br/> City</label>
+                                <h4 htmlFor="">Delivery <br/> City</h4>
                             </Col>
                             <Col xs xm={3}>
                                 <Form.Select aria-label="">
                                     <option>Select City</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="1">DELHI</option>
+                                    <option value="2">BENGAL</option>
+                                    <option value="3">COMIBATORE</option>
                                 </Form.Select>
                             </Col>
                             <Col xs xm={2}>
-                                <label htmlFor="">Pincode</label>
+                                <h4 htmlFor="">Pincode</h4>
                             </Col>
                             <Col xs xm={3}>
                                 <Form.Select aria-label="Default select example">
                                     <option>Select Pincode</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="1">147852</option>
+                                    <option value="2">123654</option>
+                                    <option value="3">963258</option>
                                 </Form.Select>
                             </Col>
                             <Col id="submit-btn" xs xm={2}>
-                                <Button variant="danger">Submit</Button>
+                                <Button variant="danger" className={"jumbotronBtn"}>FIND GIFTS</Button>
                             </Col>
                         </Row>
                     </Form>

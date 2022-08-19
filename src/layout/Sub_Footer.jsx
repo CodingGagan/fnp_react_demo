@@ -5,9 +5,9 @@ function Sub_Footer() {
     
     return (
         <Container fluid>
-            <div className="big-wallpaper">
+            {/* <div className="big-wallpaper"> */}
                 {/* <img src="https://img.freepik.com/premium-photo/worldwide-shipping-concept-world-globe-map-express-delivery-concept-fast-shipping-3d-illustration_250043-366.jpg" alt="" /> */}
-            </div>
+            {/* </div> */}
 
             <div className="subFooter">
                 <hr />
