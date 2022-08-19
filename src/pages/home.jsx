@@ -13,6 +13,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import Sub_Footer from '../layout/Sub_Footer';
 import Footer from '../layout/Footer';
+import BestSelling from '../component/Card/BestSelling';
+import TrendingCards from '../component/Card/TrendingCards';
 
 const arrCount = [1, 2, 3, 4, 5, 6];
 const CardFirst = [
@@ -35,7 +37,18 @@ const menuTitle = [
     { 'icon': "official/Icons/Pant_Gifts.webp", "title": "Plants Gift" },
     { 'icon': "official/Icons/International_Gifts.jpeg", "title": "International" }
 ];
+const bestSelling = [
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Best_Selling_Gifts/2.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Best_Selling_Gifts/3.png", "title": "Flowers Gift" },
+    { 'icon': "official/Best_Selling_Gifts/4.png", "title": "Cakes Gift" },
+];
 
+const Personalized_Gifts = [
+    { 'icon': "official/Personalized_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Personalized_Gifts/2.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Personalized_Gifts/3.png", "title": "Flowers Gift" },
+];
 
 
 const Home = ({ cartCount, addCart }) => {
@@ -55,7 +68,7 @@ const Home = ({ cartCount, addCart }) => {
             <Row>
                 <HomeMenuCard menus={menuTitle} />
             </Row>
-            <Jumbotron back_img={"https://images.pexels.com/photos/6102145/pexels-photo-6102145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
+            <Jumbotron back_img={"official/Slider.png"} />
             <Row>
                 {
                     CardFirst.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={4}><CardComponent addCart={addCart} source={el.image} cardContent={el.title} showContent={false} value="200" /></Col>)
@@ -64,13 +77,19 @@ const Home = ({ cartCount, addCart }) => {
             <Divider content="Best Selling Gift" />
             <Row>
                 {
-                    arrCount.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent source={"official/9_Categories/2.png"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                    bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><BestSelling source={el.icon} cardContent={"Product details here........"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
+                }
+            </Row>
+            <Divider content="Trending Now" />
+            <Row>
+                {
+                    bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><TrendingCards source={el.icon} cardContent={"Timeless Love Red Roses Bouquet"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
                 }
             </Row>
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                 </Row>
             </div>

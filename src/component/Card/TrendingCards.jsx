@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import './CardComponent.css';
 import { Link } from 'react-router-dom';
-export default function CardComponent({ cardClass, source, showContent, value, cardContent, custContentImg, custContent, checker }) {
+export default function BestSelling({ cardClass, source, showContent, value, cardContent, custContentImg, custContent, checker }) {
     return (
         <Card id={cardClass}>
             <Link to="/product_details">
@@ -17,7 +17,14 @@ export default function CardComponent({ cardClass, source, showContent, value, c
                         <>
                             {checker != 0 ? <Card.Body>
                                 <Card.Title>{cardContent}</Card.Title>
-                                <Card.Text>Rs {value}</Card.Text>
+                                <p class="star-rating-tranding">
+                                    
+                                <span className="rating-box">
+                                5 <AiOutlineStar />
+                                </span>
+                                <small>5 Reviews</small>
+                                </p>
+                                <Card.Text>{value} Rs</Card.Text>
                             </Card.Body> : ''}
                         </>
                         :

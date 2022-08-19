@@ -8,6 +8,45 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Custom Height and Card */
+
+#auto-height-cust {
+    height: 400px !important;
+}
+
+#auto-height-cust img {
+    height: 75% !important;
+}
+
+#auto-height-cust .card-title.h5 {
+font-size: 0.8rem;
+}
+
+#auto-height-cust .card-body small {
+    font-size: 12px;
+    padding-left: 5px;
+}
+#auto-height-cust .card-body svg {
+    font-size: 13px;
+}
+
+#auto-height-cust .card-text {
+    color: red;
+    margin: unset !important;
+    font-weight: bolder;
+    font-size: 0.7rem !important;
+}
+
+
+
+/* Custom Height and Card */
+
+/* Trending cards */
+    .star-rating-tranding {
+        text-align: right;
+    }
+/* Trending cards */
+
 .container {
     margin: 10px;
     padding: 20px;
@@ -39,6 +78,9 @@ html {
     margin: 0 0 20px 0;
 }
 
+.borderDesign .row {
+    background-color: #13a59e;
+}
 
 .category-div {
     padding: 40px 0;
@@ -72,7 +114,7 @@ html {
 .homeSmallCard {
     /* background-color: gray; */
     /* color: white; */
-    min-height: 75vh;
+    min-height: 100vh;
 }
 
 .homeSmallCard .smallCardBody {
