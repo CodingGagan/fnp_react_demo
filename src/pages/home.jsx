@@ -127,8 +127,39 @@ const Home = ({ cartCount, addCart }) => {
                         <h5>Occasions</h5>
                         <p>Celebrate each occasion with a gift that has a lasting impression</p>
                     </div>
-                    <div className="row occasionCard">
-                        
+                    <div className="row occasionCard align-items-center justify-content-center my-3">
+                        <div className="col-md-10">
+                            <div className="row check">
+                                <div className='col-4 d-flex flex-column one'>
+                                    <div className='custom-design border-secondary justify-content-center my-2 align-content-end flex-wrap'>
+                                        <button className='btn bg-white outline-0 btn-outline-success border-0 w-100' >Birthday</button>
+                                    </div>
+                                    <div className='custom-design border-secondary justify-content-center my-2 align-content-end flex-wrap'>
+                                        <button className='btn bg-white outline-0 btn-outline-success border-0 w-100' >Baby Shower</button>
+                                    </div>
+                                </div>
+                                <div className='col-4 d-flex flex-column two'>
+                                    <div className='custom-design border-secondary justify-content-center my-2 align-content-end flex-wrap order-2'>
+                                        <button className='btn bg-white outline-0 btn-outline-success border-0 w-100' >Wedding</button>
+                                    </div>
+                                    <div className='custom-design border-secondary justify-content-center my-2 align-content-end flex-wrap order-1'>
+                                        <button className='btn bg-white outline-0 btn-outline-success border-0 w-100' >House Warming</button>
+                                    </div>
+                                </div>
+                                <div className='col-4 d-flex flex-column three'>
+                                    <div className='custom-design border-secondary justify-content-center my-2 align-content-end flex-wrap'>
+                                        <button className='btn bg-white outline-0 btn-outline-success border-0 w-100' >Anniversary</button>
+                                    </div>
+                                    <div className='custom-design border-secondary justify-content-center my-2 align-content-end flex-wrap'>
+                                        <button className='btn bg-white outline-0 btn-outline-success border-0 w-100' >Best Wishes</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-md-2">
+                            <button className='btn btn-lg bg-secondary-light border border-secondary border-top-0'>Explore More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,7 +237,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -215,7 +246,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -224,7 +255,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -233,7 +264,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -250,7 +281,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -259,7 +290,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -268,7 +299,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -277,7 +308,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                         <div className="cardBody">
                             <div className="img-body">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg" className='img-thumbnail' alt="" />
@@ -286,7 +317,7 @@ const Home = ({ cartCount, addCart }) => {
                                 Demo Content
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
