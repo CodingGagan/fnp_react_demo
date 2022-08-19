@@ -114,6 +114,13 @@ input#burger-toggle:checked~.menu {
     border-radius: unset !important;
 }
 
+#root .MenuInput svg {
+    position: absolute;
+    right: 4%;
+    top: 22%;
+    COLOR: #928b8b;
+}
+
 #root .navbar-nav-scroll a svg {
     color: white !important;
 }
