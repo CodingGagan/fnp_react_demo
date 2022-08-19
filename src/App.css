@@ -109,3 +109,69 @@ html {
     height: 100%;
     width: 100%;
 }
+
+.custom-design {
+    display: flex;
+    vertical-align: top;
+    height: 250px !important;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: round;
+    border: 0.5px solid whitesmoke !important;
+
+}
+
+.custom-design:nth-child(even) {
+    height: 150px !important;
+}
+
+.one .custom-design:nth-child(1) {
+    background-image: url(https://www.whatsappimages.in/wp-content/uploads/2021/06/Free-Happy-Birthday-Cake-Images-Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.one .custom-design:nth-child(2) {
+    background-image: url(https://media.gettyimages.com/photos/baby-cupcakes-picture-id155385517?k=20&m=155385517&s=612x612&w=0&h=azbmhU6nl_sP94M251Mik-GRusWH-tZZkAh3olQPWv4=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.two .custom-design:nth-child(1) {
+    background-image: url(https://cdn.shopify.com/s/files/1/0569/2614/2657/products/DSC_1277_400x.jpg?v=1657705865);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.two .custom-design:nth-child(2) {
+    background-image: url(https://www.happywedding.app/blog/wp-content/uploads/2019/09/Personalized-DIY-gift-ideas-for-wedding-couples-1024x583.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.three .custom-design:nth-child(1) {
+    background-image: url(https://imgcdn.floweraura.com/awesome-hubby-wifey-mugs-9894750sd-A.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.three .custom-design:nth-child(2) {
+    background-image: url(https://cdn.thewirecutter.com/wp-content/media/2021/01/online-flowers-2048px-0469-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-design button {
+    border-radius: 0px 0px 5px 5px !important;
+}
+.custom-design button:hover {
+    color: white;
+    background-color: #198754 !important;
+}
