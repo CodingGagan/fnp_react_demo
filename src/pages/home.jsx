@@ -17,6 +17,7 @@ import BestSelling from '../component/Card/BestSelling';
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 import TrendingCards from '../component/Card/TrendingCards';
+import SimpleCardComponent from '../component/Card/SimpleCardComponent';
 
 const arrCount = [1, 2, 3, 4, 5, 6];
 const CardFirst = [
@@ -91,7 +92,7 @@ const Home = ({ cartCount, addCart }) => {
             <div className='borderDesign'>
                 <Row>
                     {
-                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                 </Row>
             </div>

@@ -5,6 +5,7 @@
 
 .home-card-layout  {
     margin-bottom: 4.5%;
+    margin-top: 2.5%;
 }
 
 .card {
@@ -28,7 +29,7 @@
     position: absolute;
     height: 100%;
     top: 0;
-    width: 100%;
+    width: 103%;
     background-color: rgba(0, 0, 0, 1);
     /* background-image: url(''); */
 }
@@ -56,25 +57,19 @@
     font-weight: bolder;
 }
 
-.btn.btn-danger.buy-now-cart {
-    position: unset;
-    padding: 5px 12px !important;
+/* /////////// */
+
+.card .card-custom {
+    min-height: 100% !important;
+    min-width: 162% !important;
+    height: auto;
+    /* margin-bottom: 0 !important; */
 }
 
+.cardContent-new{
+    position: absolute !important;
+    bottom: -15% !important;
+    left: 0%;
+    right: 0%;
 
-#auto-height-cust .star-rating-tranding .rating-box {
-    padding: 3px 7px;
-    background: green;
-    font-size: 11px;
-    color: white;
-    border-radius: 4px;
-}
-
-#auto-height-cust .star-rating-tranding svg {
-    color: white;
-}
-
-#auto-height-cust .card-body .trendingText {
-    color: black;
-    font-size: 16px !important;
 }
