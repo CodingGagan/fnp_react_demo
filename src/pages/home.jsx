@@ -14,6 +14,8 @@ import { Link } from 'react-router-dom';
 import Sub_Footer from '../layout/Sub_Footer';
 import Footer from '../layout/Footer';
 import BestSelling from '../component/Card/BestSelling';
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+
 import TrendingCards from '../component/Card/TrendingCards';
 
 const arrCount = [1, 2, 3, 4, 5, 6];
@@ -184,11 +186,41 @@ const Home = ({ cartCount, addCart }) => {
             </div>
 
             <Divider content="Customer Stories and Reviews" />
-            <Slider {...settings}>
-                <div className="customer-cards">
-                    
-                </div>
-            </Slider>
+            <div className="row customer-cards">
+                <Slider {...settings}>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">Hello Moto</div>
+                    <div className="col-sm-4">Hello Moto</div>
+                </Slider>
+            </div>
 
             <Divider content="Recently Viewed Products" />
 
@@ -198,56 +230,56 @@ const Home = ({ cartCount, addCart }) => {
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Delicious Chocolate Cake</h6>
+                        <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Special Festive Combo</h6>
+                        <h6>Special Festive Combo</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Delicious Chocolate Cake</h6>
+                        <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Memorable Love Combo</h6>
+                        <h6>Memorable Love Combo</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Delicious Chocolate Cake</h6>
+                        <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Memorable Love Combo</h6>
+                        <h6>Memorable Love Combo</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Delicious Chocolate Cake</h6>
+                        <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
-                            <h6>Memorable Love Combo</h6>
+                        <h6>Memorable Love Combo</h6>
                     </div>
 
                 </Slider>
