@@ -60,8 +60,8 @@
 /* /////////// */
 
 .card .card-custom {
-    min-height: 100% !important;
-    min-width: 162% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
     height: auto;
     /* margin-bottom: 0 !important; */
 }

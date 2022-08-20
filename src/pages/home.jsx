@@ -48,9 +48,38 @@ const bestSelling = [
 ];
 
 const Personalized_Gifts = [
-    { 'icon': "official/Personalized_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Personalized_Gifts/2.png", "title": "Annivesary Gift" },
-    { 'icon': "official/Personalized_Gifts/3.png", "title": "Flowers Gift" },
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Personalized_Gifts/1_copy.png", "title": "Birthday Gift" },
+    { 'icon': "official/Personalized_Gifts/2.png", "title": "Flowers Gift" },
+    { 'icon': "official/Personalized_Gifts/3.png", "title": "Annivesary Gift" },
+];
+
+const cakesGifts = [
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Cake_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Cake_Gifts/2.png", "title": "Flowers Gift" },
+    { 'icon': "official/Cake_Gifts/3.png", "title": "Annivesary Gift" },
+];
+
+const flowerGifts = [
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Flower_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Flower_Gifts/2.png", "title": "Flowers Gift" },
+    { 'icon': "official/Flower_Gifts/3.png", "title": "Annivesary Gift" },
+];
+
+const combos = [
+    { 'icon': "official/Combos/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Combos/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Combos/2.png", "title": "Flowers Gift" },
+    { 'icon': "official/Combos/3.png", "title": "Annivesary Gift" },
+];
+
+const Plants_Gifts = [
+    { 'icon': "official/Plants_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Plants_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Plants_Gifts/2.png", "title": "Flowers Gift" },
+    { 'icon': "official/Plants_Gifts/3.png", "title": "Annivesary Gift" },
 ];
 
 
@@ -61,7 +90,7 @@ const Home = ({ cartCount, addCart }) => {
         slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: true
     };
@@ -96,34 +125,40 @@ const Home = ({ cartCount, addCart }) => {
                     }
                 </Row>
             </div>
+
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Cake Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                 </Row>
             </div>
+
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Flowers Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                 </Row>
             </div>
+
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Plants Gift"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        combos.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                 </Row>
             </div>
+
             <div className='borderDesign'>
                 <Row>
                     {
-                        arrCount.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><CardComponent checker={key} custContentImg={true} custContent={"Combo With Flower"} source={"https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/idols-1aug.jpg"} cardContent={"Money Plant In Square Glass Vase"} showContent={true} value="200" /></Col>)
+                        Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                 </Row>
             </div>
+
+
             <Divider content="Best Categories" />
             <div className="category-div">
                 <Row>
@@ -218,8 +253,180 @@ const Home = ({ cartCount, addCart }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-4">Hello Moto</div>
-                    <div className="col-sm-4">Hello Moto</div>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="customer-card-section">
+                            <div className='left-card'>
+                                <div className="card-star">
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiFillStar />
+                                    <AiOutlineStar />
+                                </div>
+                                <div className="left-card-img">
+                                    <img src="official/Combos/1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='right-card'>
+                                <div className="">
+                                    <p className='red-mark-statement'>Please Update your tracking system, otherwise happy with the service.</p>
+                                    <p className="personName">
+                                        Priya a
+                                    </p>
+                                </div>
+                                <div className="productInfo">
+                                    <p>Date: 24-08-2022</p>
+                                    <p>Location: Chennai</p>
+                                    <p>Occasion: General Gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Slider>
             </div>
 
