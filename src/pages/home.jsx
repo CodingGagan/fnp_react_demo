@@ -58,7 +58,7 @@ const Home = ({ cartCount, addCart }) => {
         slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         arrows: true
     };
@@ -184,6 +184,11 @@ const Home = ({ cartCount, addCart }) => {
             </div>
 
             <Divider content="Customer Stories and Reviews" />
+            <Slider {...settings}>
+                <div className="customer-cards">
+                    
+                </div>
+            </Slider>
 
             <Divider content="Recently Viewed Products" />
 
@@ -193,48 +198,56 @@ const Home = ({ cartCount, addCart }) => {
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Special Festive Combo</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Memorable Love Combo</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Memorable Love Combo</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Delicious Chocolate Cake</h6>
                     </div>
 
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
+                            <h6>Memorable Love Combo</h6>
                     </div>
 
                 </Slider>

@@ -24,7 +24,7 @@ export default function BestSelling({ cardClass, source, showContent, value, car
                                 </span>
                                 <small>5 Reviews</small>
                                 </p>
-                                <Card.Text>{value} Rs</Card.Text>
+                                <Card.Text className={['trendingText']}>{value} Rs</Card.Text>
                             </Card.Body> : ''}
                         </>
                         :

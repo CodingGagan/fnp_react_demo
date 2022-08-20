@@ -55,3 +55,26 @@
     color: wheat;
     font-weight: bolder;
 }
+
+.btn.btn-danger.buy-now-cart {
+    position: unset;
+    padding: 5px 12px !important;
+}
+
+
+#auto-height-cust .star-rating-tranding .rating-box {
+    padding: 3px 7px;
+    background: green;
+    font-size: 11px;
+    color: white;
+    border-radius: 4px;
+}
+
+#auto-height-cust .star-rating-tranding svg {
+    color: white;
+}
+
+#auto-height-cust .card-body .trendingText {
+    color: black;
+    font-size: 16px !important;
+}

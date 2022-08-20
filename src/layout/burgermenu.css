@@ -11,6 +11,16 @@
     height: 220px !important;
 }
 
+.nav-item.dropdown {
+width: 72px;
+}
+
+a#navbarScrollingDropdown::before {
+    content: "Currency";
+    position: absolute;
+    bottom: 16px;;
+}
+
 .menu {
     transition: all 5s linear;
     position: sticky;

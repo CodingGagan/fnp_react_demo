@@ -65,8 +65,6 @@ function MainNavbar({ cartOpen }) {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>
-              <br/>
-              <p>Currency</p>
               <Nav.Link href="#action2" onClick={cartOpen}><FaShoppingCart /><p>Cart</p></Nav.Link>
               <Nav.Link>
                 <Link to="/login">
