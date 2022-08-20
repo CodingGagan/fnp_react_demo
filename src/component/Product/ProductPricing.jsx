@@ -46,7 +46,7 @@ export default function ProductPricing() {
 
                     <div className='d-flex'>
                         <div className='d-inline'><button className='btn btn-secondary'><BsFillCartPlusFill></BsFillCartPlusFill> Add To Cart</button></div>
-                        <div className='d-inline px-4'><button className='btn btn-danger'><BsFillLightningFill></BsFillLightningFill> Buy Now</button></div>
+                        <div className='d-inline px-4'><button className='btn btn-danger buy-now-cart'><BsFillLightningFill></BsFillLightningFill> Buy Now</button></div>
                     </div>
                     <hr />
                     <div className='d-flex justify-content-evenly'>

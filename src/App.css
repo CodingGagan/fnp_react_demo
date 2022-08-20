@@ -12,6 +12,8 @@ html {
 
 #auto-height-cust {
     height: 400px !important;
+    border: 1px solid #cacaca;
+    padding: 5px;
 }
 
 #auto-height-cust img {
@@ -91,11 +93,20 @@ font-size: 0.8rem;
     height: 400px;
     width: 100px;
     padding: 20px;
+    text-align: center;
+}
+
+.slideReviews a {
+    display: block;
+    padding: 5px;
+    border: 1px solid black;
 }
 
 .slideReviews img {
+    display: block;
+    margin: auto;
     height: 100%;
-    width: 100%;
+    width: 95%;
 }
 
 .slick-prev:before {
@@ -130,7 +141,7 @@ font-size: 0.8rem;
 .homeSmallCard .smallCardBody .cardBody {
     display: inline-block;
     width: 198px;
-    background-color: #f1f5f9;
+    background-color: #cbcfd2;
     height: 150px;
     border-radius: 10px;
     margin: 35px -21px 35px 35px;

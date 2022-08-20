@@ -12,6 +12,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Col, Row } from 'react-bootstrap';
 import CardComponentForMenu from '../component/Card/CardComponentForMenu';
+import { BiSearchAlt, BiPhone, BiMailSend } from "react-icons/bi";
+
 // import Sidebar from './Sidebar/Sidebar';
 import {
   Link
@@ -44,33 +46,41 @@ function MainNavbar({ cartOpen }) {
                 placeholder="Search"
                 className="me-2 w-100 d-block"
                 aria-label="Search"
-              /></Form>
+              />
+              <BiSearchAlt />
+            </Form>
             <Nav
               className="d-flex mx-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
               <Nav.Link href="#action1">
-                <FaTaxi />
+                <BiMailSend />
+                <p>Mail</p>
               </Nav.Link>
               <NavDropdown title={<FaRupeeSign />} id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Indian</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
-                  Another action
+                  Canadian
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#action2"><FaPlane /></Nav.Link>
-
-              <Nav.Link href="#action2" onClick={cartOpen}><FaShoppingCart /></Nav.Link>
+              <Nav.Link href="#action2" onClick={cartOpen}><FaShoppingCart /><p>Cart</p></Nav.Link>
               <Nav.Link>
                 <Link to="/login">
 
                   <FaUserAlt />
+
                 </Link>
+                <p>Sign-in</p>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="#!">
+
+                  <BiPhone />
+
+                </Link>
+                <p>7778889996</p>
               </Nav.Link>
 
 
