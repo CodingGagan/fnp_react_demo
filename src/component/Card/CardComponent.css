@@ -28,7 +28,7 @@
     position: absolute;
     height: 100%;
     top: 0;
-    width: 100%;
+    width: 103%;
     background-color: rgba(0, 0, 0, 1);
     /* background-image: url(''); */
 }
@@ -54,4 +54,21 @@
     border-radius: 9px;
     color: wheat;
     font-weight: bolder;
+}
+
+/* /////////// */
+
+.card .card-custom {
+    min-height: 100% !important;
+    min-width: 162% !important;
+    height: auto;
+    /* margin-bottom: 0 !important; */
+}
+
+.cardContent-new{
+    position: absolute !important;
+    bottom: -15% !important;
+    left: 0%;
+    right: 0%;
+
 }
