@@ -20,7 +20,7 @@ function Jumbotron({ back_img }) {
             <div className="search-area">
                 <Container>
                     <Form>
-                        <Row>
+                        <Row className={['jumbo-row']}>
                             <Col xs xm={2}>
                                 <h4 htmlFor="">Delivery <br/> City</h4>
                             </Col>

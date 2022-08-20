@@ -125,16 +125,13 @@ function MainNavbar({ cartOpen }) {
                 </Link>
               </Nav.Link> */}
               <Nav.Link href="#action1">
-                SAME DAY DELIVERY
+                SAME DAY DELIVERY GIFTS
+              </Nav.Link>
+              <Nav.Link href="#action1">
+          MIDNIGHT DELIVERY GIFTS
               </Nav.Link>
 
-              <Nav.Link href="#action2">
-                Birthday Gifts
-              </Nav.Link>
-
-              <Nav.Link href="#action2">
-                Plants
-              </Nav.Link>
+            
 
 
             </Nav>

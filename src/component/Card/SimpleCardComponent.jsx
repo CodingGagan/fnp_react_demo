@@ -24,10 +24,11 @@ export default function SimpleCardComponent({ cardClass, source, showContent, va
                             </div> : ''}
                         </>
                 }
-                           
+
+                
 
             </div>
-            
+
         </>
     )
 }

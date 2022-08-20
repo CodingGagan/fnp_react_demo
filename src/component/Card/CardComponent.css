@@ -3,7 +3,7 @@
     margin-right: unset;
 }
 
-.home-card-layout  {
+.home-card-layout {
     margin-bottom: 4.5%;
     margin-top: 2.5%;
 }
@@ -22,6 +22,7 @@
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -30,7 +31,9 @@
     height: 100%;
     top: 0;
     width: 103%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.88);
+    background-image: url('https://cdn.thewirecutter.com/wp-content/media/2021/01/online-flowers-2048px-0469-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024');
+    background-blend-mode: color;
     /* background-image: url(''); */
 }
 
@@ -57,6 +60,12 @@
     font-weight: bolder;
 }
 
+.trending-main-row {
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
 /* /////////// */
 
 .card .card-custom {
@@ -66,10 +75,42 @@
     /* margin-bottom: 0 !important; */
 }
 
-.cardContent-new{
+.cardContent-new {
     position: absolute !important;
-    bottom: -15% !important;
+    bottom: -10% !important;
     left: 0%;
+    font-size: 10px;
     right: 0%;
+    font-weight: bolder;
+}
 
+
+
+.ribbon {
+    position: absolute;
+    height: 5%;
+    width: 25%;
+    bottom: 40%;
+    background-color: red;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    left: -5px;
+}
+
+.ribbon::before {
+    content: "";
+    left: 0;
+    border-right: 10px solid red;
+    position: absolute;
+    top: 100%;
+    border-bottom: 10px solid transparent;
+}
+
+.wishList svg {
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    font-size: 30px;
 }

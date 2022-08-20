@@ -47,6 +47,14 @@ const bestSelling = [
     { 'icon': "official/Best_Selling_Gifts/4.png", "title": "Cakes Gift" },
 ];
 
+const trendingCards = [
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Best_Selling_Gifts/2.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Best_Selling_Gifts/3.png", "title": "Flowers Gift" },
+    { 'icon': "official/Best_Selling_Gifts/4.png", "title": "Cakes Gift" },
+    { 'icon': "official/Best_Selling_Gifts/3.png", "title": "Flowers Gift" },
+];
+
 const Personalized_Gifts = [
     { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
     { 'icon': "official/Personalized_Gifts/1_copy.png", "title": "Birthday Gift" },
@@ -90,7 +98,17 @@ const Home = ({ cartCount, addCart }) => {
         slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,
-        autoplay: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: true
+    };
+    const settings2 = {
+        infinite: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        lazyLoad: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         arrows: true
     };
@@ -113,53 +131,69 @@ const Home = ({ cartCount, addCart }) => {
                 }
             </Row>
             <Divider content="Trending Now" />
-            <Row>
+            <Row className={['trending-main-row']}>
                 {
-                    bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><TrendingCards source={el.icon} cardContent={"Timeless Love Red Roses Bouquet"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
+                    trendingCards.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={2}><TrendingCards source={el.icon} cardContent={"Timeless Love Red Roses Bouquet"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
                 }
             </Row>
             <div className='borderDesign'>
-                <Row>
+                <Row className={['position-relative']}>
                     {
                         Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
+                     <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
                 </Row>
             </div>
 
             <div className='borderDesign'>
-                <Row>
+                <Row className={['position-relative']}>
                     {
                         cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
+                     <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
                 </Row>
             </div>
 
             <div className='borderDesign'>
-                <Row>
+                <Row className={['position-relative']}>
                     {
                         flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
+                     <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
                 </Row>
             </div>
 
             <div className='borderDesign'>
-                <Row>
+                <Row className={['position-relative']}>
                     {
                         combos.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
+                     <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
                 </Row>
+                
             </div>
 
             <div className='borderDesign'>
-                <Row>
+                <Row className={['position-relative']}>
                     {
                         Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
+                    <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
                 </Row>
             </div>
 
 
-            <Divider content="Best Categories" />
+            {/* <Divider content="Best Categories" />
             <div className="category-div">
                 <Row>
                     <CategoriesBox />
@@ -175,7 +209,7 @@ const Home = ({ cartCount, addCart }) => {
                     <CategoriesBox />
                     <CategoriesBox />
                 </Row>
-            </div>
+            </div> */}
 
             <Divider content="Browse By Categories" />
             <div className="container">
@@ -433,7 +467,7 @@ const Home = ({ cartCount, addCart }) => {
             <Divider content="Recently Viewed Products" />
 
             <Container>
-                <Slider {...settings}>
+                <Slider {...settings2}>
                     <div className='slideReviews'>
                         <Link to="/product_details">
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
@@ -481,6 +515,13 @@ const Home = ({ cartCount, addCart }) => {
                             <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
                         </Link>
                         <h6>Delicious Chocolate Cake</h6>
+                    </div>
+
+                    <div className='slideReviews'>
+                        <Link to="/product_details">
+                            <img src="https://www.fnp.com/images/pr/l/v20220520190338/beautiful-mixed-roses-moon-basket_1.jpg" alt="" />
+                        </Link>
+                        <h6>Memorable Love Combo</h6>
                     </div>
 
                     <div className='slideReviews'>

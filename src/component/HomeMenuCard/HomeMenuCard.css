@@ -1,22 +1,22 @@
-.col-xl-1.col{
+.col-xl-1.col {
     padding: 10px;
     border: 1px solid #cacaca;
     margin: 9px 0px 9px 21px;
     text-align: center;
-    width: 150px;
-background-color: #f7f5e9;
+    width: 12.6%;
+    background-color: #f7f5e9;
 }
 
 .menu-upper-icon {
-     height: 57px;
-     width: 57px;
-     margin: auto;
+    height: 57px;
+    width: 57px;
+    margin: auto;
 }
 
 .menu-upper-icon img {
     display: block;
     margin: auto;
-     width: 100%;
+    width: 100%;
 }
 
 .menu-bottom-title {
