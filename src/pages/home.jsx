@@ -45,6 +45,10 @@ const bestSelling = [
     { 'icon': "official/Best_Selling_Gifts/2.png", "title": "Annivesary Gift" },
     { 'icon': "official/Best_Selling_Gifts/3.png", "title": "Flowers Gift" },
     { 'icon': "official/Best_Selling_Gifts/4.png", "title": "Cakes Gift" },
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
+    { 'icon': "official/Best_Selling_Gifts/2.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Best_Selling_Gifts/3.png", "title": "Flowers Gift" },
+    { 'icon': "official/Best_Selling_Gifts/4.png", "title": "Cakes Gift" },
 ];
 
 const trendingCards = [
@@ -112,6 +116,16 @@ const Home = ({ cartCount, addCart }) => {
         autoplaySpeed: 2000,
         arrows: true
     };
+    const settingsBestSelling = {
+        infinite: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        lazyLoad: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: true
+    };
 
     return (
         <>
@@ -119,72 +133,36 @@ const Home = ({ cartCount, addCart }) => {
                 <HomeMenuCard menus={menuTitle} />
             </Row>
             <Jumbotron back_img={"official/Slider.png"} />
-            <Row>
+            <Row className={['second-section-images']}>
                 {
                     CardFirst.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={4}><CardComponent addCart={addCart} source={el.image} cardContent={el.title} showContent={false} value="200" /></Col>)
                 }
             </Row>
             <Divider content="Best Selling Gift" />
             <Row>
-                {
-                    bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><BestSelling source={el.icon} cardContent={"Product details here........"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
-                }
+                <Slider {...settingsBestSelling}>
+                    {
+                        bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><BestSelling source={el.icon} cardContent={"Product details here........"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
+                    }
+                </Slider>
             </Row>
             <Divider content="Trending Now" />
-            <Row className={['trending-main-row']}>
-                {
+            <Row>
+                {/* {
                     trendingCards.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={2}><TrendingCards source={el.icon} cardContent={"Timeless Love Red Roses Bouquet"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
-                }
+                } */}
+                <Slider {...settingsBestSelling}>
+                    {
+                        bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><BestSelling source={el.icon} cardContent={"Product details here........"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
+                    }
+                </Slider>
             </Row>
+            
+            <div className="container-fluid">
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {
-                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personaized Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
-                    }
-                     <span className={'view_all_btn'}>
-                        explore all...
-                    </span>
-                </Row>
-            </div>
-
-            <div className='borderDesign'>
-                <Row className={['position-relative']}>
-                    {
-                        cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
-                    }
-                     <span className={'view_all_btn'}>
-                        explore all...
-                    </span>
-                </Row>
-            </div>
-
-            <div className='borderDesign'>
-                <Row className={['position-relative']}>
-                    {
-                        flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gift"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
-                    }
-                     <span className={'view_all_btn'}>
-                        explore all...
-                    </span>
-                </Row>
-            </div>
-
-            <div className='borderDesign'>
-                <Row className={['position-relative']}>
-                    {
-                        combos.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
-                    }
-                     <span className={'view_all_btn'}>
-                        explore all...
-                    </span>
-                </Row>
-                
-            </div>
-
-            <div className='borderDesign'>
-                <Row className={['position-relative']}>
-                    {
-                        Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personlaized Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
                         explore all...
@@ -192,32 +170,58 @@ const Home = ({ cartCount, addCart }) => {
                 </Row>
             </div>
 
-
-            {/* <Divider content="Best Categories" />
-            <div className="category-div">
-                <Row>
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
-                    <CategoriesBox />
+            <div className='borderDesign'>
+                <Row className={['position-relative']}>
+                    {
+                        cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    }
+                    <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
                 </Row>
-            </div> */}
+            </div>
+
+            <div className='borderDesign'>
+                <Row className={['position-relative']}>
+                    {
+                        flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    }
+                    <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
+                </Row>
+            </div>
+
+            <div className='borderDesign'>
+                <Row className={['position-relative']}>
+                    {
+                        combos.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    }
+                    <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
+                </Row>
+
+            </div>
+
+            <div className='borderDesign'>
+                <Row className={['position-relative']}>
+                    {
+                        Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                    }
+                    <span className={'view_all_btn'}>
+                        explore all...
+                    </span>
+                </Row>
+            </div>
+            </div>
 
             <Divider content="Browse By Categories" />
-            <div className="container">
+            <div className="container-fluid">
                 <div className="homeSmallCard">
-                    <div className="smallCardHeader">
+                    {/* <div className="smallCardHeader">
                         <h5>Occasions</h5>
-                        <p>Celebrate each occasion with a gift that has a lasting impression</p>
-                    </div>
+                    </div> */}
                     <div className="row occasionCard align-items-center justify-content-center my-3">
                         <div className="col-md-10">
                             <div className="row check">
@@ -248,8 +252,8 @@ const Home = ({ cartCount, addCart }) => {
 
                             </div>
                         </div>
-                        <div className="col-md-2">
-                            <button className='btn btn-lg bg-secondary-light border border-secondary border-top-0'>Explore More</button>
+                        <div className="col-md-2 explore_more_categories">
+                            <button className='btn btn-lg border border-secondary border-top-0'>Explore More</button>
                         </div>
                     </div>
                 </div>
@@ -279,11 +283,7 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -308,11 +308,7 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -337,11 +333,7 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -366,11 +358,7 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -395,11 +383,7 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -424,11 +408,7 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -453,20 +433,18 @@ const Home = ({ cartCount, addCart }) => {
                                         Priya a
                                     </p>
                                 </div>
-                                <div className="productInfo">
-                                    <p>Date: 24-08-2022</p>
-                                    <p>Location: Chennai</p>
-                                    <p>Occasion: General Gifting</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </Slider>
+                <h6 className={"customer_cards_rating_heading"}>(Rated 4.6/5 based on 22497 ratings)</h6>
+
             </div>
 
             <Divider content="Recently Viewed Products" />
 
-            <Container>
+            {/* <Container>
                 <Slider {...settings2}>
                     <div className='slideReviews'>
                         <Link to="/product_details">
@@ -533,14 +511,20 @@ const Home = ({ cartCount, addCart }) => {
 
                 </Slider>
 
-            </Container>
+            </Container> */}
+            <Slider {...settingsBestSelling}>
+                {
+                    bestSelling.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={3}><BestSelling source={el.icon} cardContent={"Product details here........"} cardClass="auto-height-cust" showContent={true} value="200" /></Col>)
+                }
+            </Slider>
 
-            <div className="container">
+            <Divider content="Send Gifts World Wide" />
+
+            <div className="container-fluid">
                 <div className="homeSmallCard">
-                    <div className="smallCardHeader">
-                        <h5>Send Gifts World Wide</h5>
-                        <p>A gift to every part of the world</p>
-                    </div>
+                    {/* <div className="smallCardHeader">
+                        
+                    </div> */}
                     <div className="smallCardBody">
                         <div className="cardBody">
                             <div className="img-body">

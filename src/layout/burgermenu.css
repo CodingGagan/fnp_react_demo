@@ -1,3 +1,8 @@
+.slick-slider.slick-initialized {
+    width: 95% !important;
+    margin: auto !important;
+}
+
 .BorderInception {
     /* position: absolute; */
     width: 100%;
@@ -7,18 +12,37 @@
     border: 1px solid black;
 }
 
+.Green-card  {
+    padding: 17px !important;
+}
+
 #menuCard {
     height: 220px !important;
 }
 
 .nav-item.dropdown {
-width: 72px;
+    width: 72px;
 }
+
+.navbar-icons a svg {
+    display: block;
+    margin: auto;
+}
+
+/* rupess icons */
+.dropdown-toggle::after {
+    position: absolute;
+    right: 20%;
+    top: 24%;
+}
+
+/* rupess icons */
 
 a#navbarScrollingDropdown::before {
     content: "Currency";
     position: absolute;
-    bottom: 16px;;
+    bottom: 16px;
+    ;
 }
 
 .menu {
@@ -37,7 +61,7 @@ a#navbarScrollingDropdown::before {
 }
 
 .SubMenuLinks a {
-color: white;
+    color: white;
 }
 
 .react-tabs__tab--selected {
@@ -157,5 +181,42 @@ input#burger-toggle:checked~.menu {
     transition: 0.5s;
 }
 
+.slick-slide {
+    padding: 0 8px;
+}
+
+
+.explore_more_categories {
+    position: relative;
+    text-align: center;
+}
+
+.explore_more_categories button {
+    background-color: #e2e8f0;
+}
+
+.explore_more_categories::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    background: rgb(200, 211, 223);
+    background: linear-gradient(360deg, rgba(200, 211, 223, 1) 0%, rgba(229, 234, 240, 1) 35%, rgba(249, 250, 252, 1) 100%);
+    top: -246%;
+    left: 48%;
+    border: 10px 10px 0 0;
+}
+
+.explore_more_categories::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    background: rgb(200, 211, 223);
+    background: linear-gradient(180deg, rgba(200, 211, 223, 1) 0%, rgba(229, 234, 240, 1) 35%, rgba(249, 250, 252, 1) 100%);
+    top: 140%;
+    left: 48%;
+    border: 10px 10px 0 0;
+}
 
 /* *********************************** */

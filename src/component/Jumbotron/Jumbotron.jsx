@@ -14,13 +14,16 @@ function Jumbotron({ back_img }) {
     return (
         <div className='jumbotron'>
             <div className="overlay"></div>
-            <h1>Buy Happiness <br /> We Deliver It.</h1>
+         
             <img src={back_img} alt="" />
 
             <div className="search-area">
                 <Container>
                     <Form>
                         <Row className={['jumbo-row']}>
+                            <div className="jumbo-form">
+                                
+                            </div>
                             <Col xs xm={2}>
                                 <h4 htmlFor="">Delivery <br/> City</h4>
                             </Col>

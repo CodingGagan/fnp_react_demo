@@ -1,15 +1,15 @@
 .col-xl-1.col {
     padding: 10px;
     border: 1px solid #cacaca;
-    margin: 9px 0px 9px 21px;
+    margin: 9px 0px 9px 10px;
     text-align: center;
-    width: 12.6%;
-    background-color: #f7f5e9;
+    width: 13.5%;
+    border-radius: 8px;
 }
 
 .menu-upper-icon {
-    height: 57px;
-    width: 57px;
+    height: 51px;
+    width: 51px;
     margin: auto;
 }
 

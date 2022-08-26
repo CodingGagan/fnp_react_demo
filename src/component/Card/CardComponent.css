@@ -4,18 +4,20 @@
 }
 
 .home-card-layout {
-    margin-bottom: 4.5%;
-    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-top: 2.1%;
+    padding: 0.6% 0.2%;
 }
 
 .card {
-    height: 300px !important;
+    height: 248px !important;
 }
 
 .card img {
     display: block;
     margin: auto;
     height: 100%;
+    border-radius: 7px 7px 0 0;
 }
 
 .cardContent {
@@ -23,6 +25,10 @@
     color: white;
     padding: 10px;
     text-align: center;
+    width: 99.4%;
+    font-size: 25px;
+    margin: auto;
+    border-radius: 0px 0px 7px 7px;
 }
 
 
@@ -39,7 +45,7 @@
 
 .customCenterContent h2 {
     position: absolute;
-    bottom: 1%;
+    bottom: -10%;
     left: 50%;
     width: 75%;
     transform: translate(-50%, -20%);
@@ -89,8 +95,8 @@
 .ribbon {
     position: absolute;
     height: 5%;
-    width: 25%;
-    bottom: 40%;
+    width: 27%;
+    bottom: 27%;
     background-color: red;
     font-size: 10px;
     color: white;

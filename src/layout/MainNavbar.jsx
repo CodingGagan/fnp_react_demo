@@ -50,7 +50,7 @@ function MainNavbar({ cartOpen }) {
               <BiSearchAlt />
             </Form>
             <Nav
-              className="d-flex mx-auto my-2 my-lg-0"
+              className="d-flex navbar-icons mx-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
