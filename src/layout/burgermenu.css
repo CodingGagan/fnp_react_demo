@@ -12,8 +12,12 @@
     border: 1px solid black;
 }
 
-.Green-card  {
+.Green-card {
     padding: 17px !important;
+}
+
+.Green-card .card-custom {
+    border-radius: 7px !important;
 }
 
 #menuCard {
@@ -42,9 +46,17 @@ a#navbarScrollingDropdown::before {
     content: "Currency";
     position: absolute;
     bottom: 16px;
-    ;
+    right: 0;
 }
 
+#navbarScroll .icons-navbar .phoneNumber,
+#navbarScroll .icons-navbar .phoneNumber svg {
+    color: white;
+    font-size: 20px;
+}
+#navbarScroll .icons-navbar .phoneNumber a {
+    margin-right: 10%;
+}
 .menu {
     transition: all 5s linear;
     position: sticky;

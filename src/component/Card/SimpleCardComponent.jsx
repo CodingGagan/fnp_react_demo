@@ -20,7 +20,7 @@ export default function SimpleCardComponent({ cardClass, source, showContent, va
                         :
                         <>
                             {checker != 0 ? <div className='cardContent-new'>
-                                {cardContent}
+                              <p>  {cardContent}</p>
                             </div> : ''}
                         </>
                 }

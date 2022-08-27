@@ -162,10 +162,10 @@ const Home = ({ cartCount, addCart }) => {
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {
-                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personlaized Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personalized Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        explore all...
+                        View all...
                     </span>
                 </Row>
             </div>
@@ -173,10 +173,10 @@ const Home = ({ cartCount, addCart }) => {
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {
-                        cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        explore all...
+                        View all...
                     </span>
                 </Row>
             </div>
@@ -184,10 +184,10 @@ const Home = ({ cartCount, addCart }) => {
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {
-                        flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        explore all...
+                        View all...
                     </span>
                 </Row>
             </div>
@@ -195,10 +195,10 @@ const Home = ({ cartCount, addCart }) => {
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {
-                        combos.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        combos.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        explore all...
+                        View all...
                     </span>
                 </Row>
 
@@ -207,10 +207,10 @@ const Home = ({ cartCount, addCart }) => {
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {
-                        Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={"Money Plant In Square Glass Vase"} showContent={false} value="200" /></Col>)
+                        Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        explore all...
+                        View all...
                     </span>
                 </Row>
             </div>

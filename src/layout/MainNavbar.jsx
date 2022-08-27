@@ -12,6 +12,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Col, Row } from 'react-bootstrap';
 import CardComponentForMenu from '../component/Card/CardComponentForMenu';
+import { AiFillHeart } from "react-icons/ai";
 import { BiSearchAlt, BiPhone, BiMailSend } from "react-icons/bi";
 
 // import Sidebar from './Sidebar/Sidebar';
@@ -43,49 +44,53 @@ function MainNavbar({ cartOpen }) {
             <Form id={styles.inputTag} className="d-flex mx-auto MenuInput">
               <Form.Control
                 type="search"
-                placeholder="Search"
+                placeholder="Search for gifts, flowers & cakes"
                 className="me-2 w-100 d-block"
                 aria-label="Search"
               />
               <BiSearchAlt />
             </Form>
-            <Nav
-              className="d-flex navbar-icons mx-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
-              <Nav.Link href="#action1">
-                <BiMailSend />
-                <p>Mail</p>
-              </Nav.Link>
-              <NavDropdown title={<FaRupeeSign />} id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Indian</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Canadian
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-              <Nav.Link href="#action2" onClick={cartOpen}><FaShoppingCart /><p>Cart</p></Nav.Link>
-              <Nav.Link>
-                <Link to="/login">
 
-                  <FaUserAlt />
+            <div className="icons-navbar">
+              <Nav
+                className="d-flex navbar-icons mx-auto my-2 my-lg-0"
+                style={{ maxHeight: '100px' }}
+                navbarScroll
+              >
 
-                </Link>
-                <p>Sign-in</p>
-              </Nav.Link>
-              <Nav.Link>
+                <Nav.Link href="#action1">
+                  <AiFillHeart />
+                  <p>WishList</p>
+                </Nav.Link>
+                <Nav.Link href="#action1">
+                  <BiMailSend />
+                  <p>Mail</p>
+                </Nav.Link>
+                <NavDropdown title={<FaRupeeSign />} id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="#action3">Indian</NavDropdown.Item>
+                  <NavDropdown.Item href="#action4">
+                    Canadian
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </NavDropdown>
+                <Nav.Link href="#action2" onClick={cartOpen}><FaShoppingCart /><p>Cart</p></Nav.Link>
+                <Nav.Link>
+                  <Link to="/login">
+
+                    <FaUserAlt />
+
+                  </Link>
+                  <p>Sign-in</p>
+                </Nav.Link>
+              </Nav>
+              <Nav.Link className="phoneNumber">
                 <Link to="#!">
 
                   <BiPhone />
-
+                  7778889996
                 </Link>
-                <p>7778889996</p>
               </Nav.Link>
-
-
-            </Nav>
-
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -128,10 +133,10 @@ function MainNavbar({ cartOpen }) {
                 SAME DAY DELIVERY GIFTS
               </Nav.Link>
               <Nav.Link href="#action1">
-          MIDNIGHT DELIVERY GIFTS
+                MIDNIGHT DELIVERY GIFTS
               </Nav.Link>
 
-            
+
 
 
             </Nav>

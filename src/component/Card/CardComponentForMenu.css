@@ -61,3 +61,9 @@ svg {
     color: #7e7a7a;
     font-size: 14px;
 }
+
+.card-content-best-sel {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+}

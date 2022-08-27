@@ -22,14 +22,18 @@ export default function BestSelling({ cardClass, source, showContent, value, car
                         <>
                             {checker != 0 ? <Card.Body>
                                 <Card.Title>{cardContent}</Card.Title>
-                                <AiFillStar />
-                                <AiFillStar />
-                                <AiFillStar />
-                                <AiFillStar />
-                                <AiOutlineStar />
-                                <small>4 star (437)</small>
-                                <Card.Text>{value} Rs</Card.Text>
-                                <Card.Text>Earliest Delivery: Today</Card.Text>
+                                <Card.Text className='card-content-best-sel'><span>{value} Rs</span>
+                                    <span className='best-sel-star-rate'>
+                                        <AiFillStar />
+                                        <AiFillStar />
+                                        <AiFillStar />
+                                        <AiFillStar />
+                                        <AiOutlineStar />
+                                        <small>4.2 (437)</small>
+                                    </span>
+                                </Card.Text>
+                                {/* */}
+                                <Card.Text className={['best_sell_card_highlighter']}>Earliest Delivery: Today</Card.Text>
                             </Card.Body> : ''}
                         </>
                         :
