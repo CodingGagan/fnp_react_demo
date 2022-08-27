@@ -67,3 +67,26 @@ svg {
     justify-content: space-between;
     padding: 8px 16px;
 }
+.card-content-best-sel span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.card-content-best-sel .best-sel-star-rate small {
+    color: black;
+    font-weight: 600;
+}
+
+.card-content-best-sel .best-sel-star-rate span.star-box {
+    align-items: center;
+    background: #008539;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+}
+.card-content-best-sel .best-sel-star-rate span.star-box svg {
+    color: white;
+    margin: 0 0px 3px 3px;
+}

@@ -61,37 +61,37 @@ const trendingCards = [
 
 const Personalized_Gifts = [
     { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Personalized_Gifts/1_copy.png", "title": "Birthday Gift" },
-    { 'icon': "official/Personalized_Gifts/2.png", "title": "Flowers Gift" },
-    { 'icon': "official/Personalized_Gifts/3.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Personalized_Gifts/1_copy.png", "title": "Printed Mugs" },
+    { 'icon': "official/Personalized_Gifts/2.png", "title": "Magic Pillow" },
+    { 'icon': "official/Personalized_Gifts/3.png", "title": "Stationary" },
 ];
 
 const cakesGifts = [
-    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Cake_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Cake_Gifts/2.png", "title": "Flowers Gift" },
-    { 'icon': "official/Cake_Gifts/3.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Pineapple Cake" },
+    { 'icon': "official/Cake_Gifts/1.png", "title": "Pineapple Cake" },
+    { 'icon': "official/Cake_Gifts/2.png", "title": "Choco-Truffle Cake" },
+    { 'icon': "official/Cake_Gifts/3.png", "title": "Chocolate Cake" },
 ];
 
 const flowerGifts = [
     { 'icon': "official/Best_Selling_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Flower_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Flower_Gifts/2.png", "title": "Flowers Gift" },
-    { 'icon': "official/Flower_Gifts/3.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Flower_Gifts/1.png", "title": "Special Bouquet" },
+    { 'icon': "official/Flower_Gifts/2.png", "title": "Gerbera" },
+    { 'icon': "official/Flower_Gifts/3.png", "title": "Red Rose" },
 ];
 
 const combos = [
     { 'icon': "official/Combos/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Combos/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Combos/2.png", "title": "Flowers Gift" },
-    { 'icon': "official/Combos/3.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Combos/1.png", "title": "Flowers with Dry Fruit" },
+    { 'icon': "official/Combos/2.png", "title": "Flowers with Sweets" },
+    { 'icon': "official/Combos/3.png", "title": "Flowers with Chocolates" },
 ];
 
 const Plants_Gifts = [
     { 'icon': "official/Plants_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Plants_Gifts/1.png", "title": "Birthday Gift" },
-    { 'icon': "official/Plants_Gifts/2.png", "title": "Flowers Gift" },
-    { 'icon': "official/Plants_Gifts/3.png", "title": "Annivesary Gift" },
+    { 'icon': "official/Plants_Gifts/1.png", "title": "Special Plants" },
+    { 'icon': "official/Plants_Gifts/2.png", "title": "Bamboo Plants" },
+    { 'icon': "official/Plants_Gifts/3.png", "title": "Lucky Plant" },
 ];
 
 
@@ -165,7 +165,7 @@ const Home = ({ cartCount, addCart }) => {
                         Personalized_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Personalized Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        View all...
+                        View All
                     </span>
                 </Row>
             </div>
@@ -176,7 +176,7 @@ const Home = ({ cartCount, addCart }) => {
                         cakesGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Cakes Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        View all...
+                        View All
                     </span>
                 </Row>
             </div>
@@ -187,7 +187,7 @@ const Home = ({ cartCount, addCart }) => {
                         flowerGifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Flowers Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        View all...
+                        View All
                     </span>
                 </Row>
             </div>
@@ -198,7 +198,7 @@ const Home = ({ cartCount, addCart }) => {
                         combos.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Combos"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        View all...
+                        View All
                     </span>
                 </Row>
 
@@ -210,7 +210,7 @@ const Home = ({ cartCount, addCart }) => {
                         Plants_Gifts.slice(0, 4).map((el, key) => <Col key={key} className='Green-card home-card-layout' xs={12} sm={6} lg={4} xl={3}><SimpleCardComponent checker={key} custContentImg={true} custContent={"Plants Gifts"} source={el.icon} cardContent={el.title} showContent={false} value="200" /></Col>)
                     }
                     <span className={'view_all_btn'}>
-                        View all...
+                        View All
                     </span>
                 </Row>
             </div>

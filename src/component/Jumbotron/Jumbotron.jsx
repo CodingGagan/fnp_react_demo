@@ -14,7 +14,7 @@ function Jumbotron({ back_img }) {
     return (
         <div className='jumbotron'>
             <div className="overlay"></div>
-         
+
             <img src={back_img} alt="" />
 
             <div className="search-area">
@@ -22,30 +22,34 @@ function Jumbotron({ back_img }) {
                     <Form>
                         <Row className={['jumbo-row']}>
                             <div className="jumbo-form">
-                                
+
                             </div>
-                            <Col xs xm={2}>
-                                <h4 htmlFor="">Delivery <br/> City</h4>
-                            </Col>
-                            <Col xs xm={3}>
-                                <Form.Select aria-label="">
+                            <div className="col-sm-1">
+                                <h5>DELIVERY <br /> CITY</h5>
+                            </div>
+                            <div className="col-sm-3">
+                                <select name="" id="" className="form-control">
                                     <option>Select City</option>
                                     <option value="1">DELHI</option>
                                     <option value="2">BENGAL</option>
-                                    <option value="3">COMIBATORE</option>
-                                </Form.Select>
-                            </Col>
-                            <Col xs xm={2}>
-                                <h4 htmlFor="">Pincode</h4>
-                            </Col>
-                            <Col xs xm={3}>
-                                <Form.Select aria-label="Default select example">
+                                    <option value="3">COMIBATORE</option></select>
+                            </div>
+                            <div className="col-1"></div>
+                            <div className="col-sm-1">
+                                <h5>
+                                PINCODE
+                                </h5>
+                            </div>
+                            <div className="col-sm-3">
+                                <select name="" id="" className="form-control">
                                     <option>Select Pincode</option>
                                     <option value="1">147852</option>
                                     <option value="2">123654</option>
                                     <option value="3">963258</option>
-                                </Form.Select>
-                            </Col>
+                                </select>
+                            </div>
+                            <div className="col-1"></div>
+
                             <Col id="submit-btn" xs xm={2}>
                                 <Button variant="danger" className={"jumbotronBtn"}>FIND GIFTS</Button>
                             </Col>

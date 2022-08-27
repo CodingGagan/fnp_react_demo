@@ -22,14 +22,13 @@ export default function BestSelling({ cardClass, source, showContent, value, car
                         <>
                             {checker != 0 ? <Card.Body>
                                 <Card.Title>{cardContent}</Card.Title>
-                                <Card.Text className='card-content-best-sel'><span>{value} Rs</span>
+                                <Card.Text className='card-content-best-sel'><span>{value} ₹</span>
                                     <span className='best-sel-star-rate'>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiOutlineStar />
-                                        <small>4.2 (437)</small>
+                                        <span className="star-box">
+                                            4.2
+                                            <AiFillStar />
+                                        </span>
+                                        <small>10 Reviews</small>
                                     </span>
                                 </Card.Text>
                                 {/* */}

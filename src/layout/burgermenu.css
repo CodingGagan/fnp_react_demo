@@ -53,10 +53,10 @@ a#navbarScrollingDropdown::before {
 #navbarScroll .icons-navbar .phoneNumber svg {
     color: white;
     font-size: 20px;
+    text-align: right !important;
 }
 #navbarScroll .icons-navbar .phoneNumber a {
     margin-right: 10%;
-    text-align: right;
 }
 .menu {
     transition: all 5s linear;
@@ -74,6 +74,10 @@ a#navbarScrollingDropdown::before {
 }
 
 .SubMenuLinks a {
+    color: white;
+}
+
+.SubMenuLinks a:hover {
     color: white;
 }
 

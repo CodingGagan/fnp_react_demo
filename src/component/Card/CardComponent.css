@@ -32,7 +32,7 @@
 }
 
 .home-card-layout .best_sell_card_highlighter {
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: rgba(123,97,255,.16);
     padding: 4px 8px;
     text-align: center;
@@ -56,15 +56,27 @@
     /* background-image: url(''); */
 }
 
-.customCenterContent h2 {
+.borderDesign:first-child .Green-card .customCenterContent h2 {
     position: absolute;
-    bottom: -10%;
+    bottom: -3%;
     left: 50%;
     width: 75%;
     transform: translate(-50%, -20%);
     text-align: center;
     color: white;
-    padding: 60px 10px;
+    padding: 46px 0px;
+    border: 1px solid white;
+}
+
+.borderDesign:not(:first-child) .Green-card .customCenterContent h2 {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    color: white;
+    padding: 46px 0px;
     border: 1px solid white;
 }
 
@@ -102,7 +114,7 @@
     right: 0%;
     padding: 3px 0;
     font-weight: 500;
-    color: rgba(93, 92, 92, 0.467);
+    color: #000;
     font-size: 18px;
 }
 
@@ -110,15 +122,16 @@
 
 .ribbon {
     position: absolute;
-    height: 5%;
+    height: 20px;
     width: 27%;
-    bottom: 27%;
+    bottom: 29%;
     background-color: red;
     font-size: 10px;
     color: white;
     text-align: center;
     font-weight: 700;
     left: -5px;
+    line-height: 20px;
 }
 
 .ribbon::before {
