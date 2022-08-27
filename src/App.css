@@ -167,7 +167,10 @@ margin-top: 1% !important;
     color: #435269;
     border-radius: 0 0 10px 10px !important;
 }
-
+.homeSmallCard .occasionCard .explore_more_categories button {
+    border-radius: 10px !important;
+    border: 1px solid !important;
+}
 .homeSmallCard .occasionCard .col-4.d-flex.flex-column {
     padding: 0px 10px 0px 10px !important;
 }
