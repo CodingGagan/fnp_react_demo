@@ -105,6 +105,10 @@
     height: auto;
     /* margin-bottom: 0 !important; */
 }
+.cardContent-new p {
+    font-weight: bold;
+
+}
 
 .cardContent-new {
     position: absolute !important;
