@@ -16,10 +16,11 @@ html {
     height: 470px !important;
     border: 1px solid #cacaca;
     padding: 5px;
+    border-radius: 13px;
 }
 
 #auto-height-cust img {
-    height: 75% !important;
+    height: 75% !important;;
 }
 
 #auto-height-cust .card-title.h5 {

@@ -158,7 +158,7 @@ const Home = ({ cartCount, addCart }) => {
                 </Slider>
             </Row>
             
-            <div className="container-fluid">
+            <div className="container-fluid" style={{marginTop: "5%"}}>
             <div className='borderDesign'>
                 <Row className={['position-relative']}>
                     {

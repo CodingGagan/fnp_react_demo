@@ -10,7 +10,7 @@ export default function BestSelling({ cardClass, source, showContent, value, car
             <Link to="/product_details">
 
                 <>
-                    <Card.Img variant="top" src={source} />
+                    <Card.Img variant="top" src={source} style={{borderRadius: "20px"}} />
                     {custContentImg && checker == 0 ? <div className="customCenterContent"><h2>{custContent}</h2></div> : ''}
                     <span className="wishList">
                         <AiOutlineHeart />
