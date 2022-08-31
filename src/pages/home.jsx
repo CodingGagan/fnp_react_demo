@@ -133,7 +133,7 @@ const Home = ({ cartCount, addCart }) => {
                 <HomeMenuCard menus={menuTitle} />
             </Row>
             <Jumbotron back_img={"official/Slider.png"} />
-            <Row className={['second-section-images']}>
+            <Row className={['second-section-images']} style={{marginBottom: '7%'}}>
                 {
                     CardFirst.map((el, key) => <Col key={key} className='home-card-layout' xs={12} sm={6} lg={4} xl={4}><CardComponent addCart={addCart} source={el.image} cardContent={el.title} showContent={false} value="200" /></Col>)
                 }
